@@ -7,12 +7,9 @@
 	<title>WebMarket</title>
 	</head>
 	<body>
-	<nav class="navbar navbar-expand navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="./welcome.jsp">Home</a>
-		</div>
-	</nav>
-	<%! String wc = "Welcome to Web Shopping Mall";
+	<%@ include file="menu.jsp" %>
+	
+	<%! String wc = "웹 쇼핑몰에 오신 것을 환영합니다.";
 		String tag = "Welcome to Web Market!";%>
 		
 	<div class="bg-secondary text-dark rounded">
@@ -27,6 +24,6 @@
 		</div>
 	</div>
 	<hr>
-	<footer><p>&copy; WebMarket</p></footer>
+	<%@ include file="footer.jsp" %>
 	</body>
 </html>
