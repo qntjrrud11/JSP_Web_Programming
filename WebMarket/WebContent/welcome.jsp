@@ -7,7 +7,7 @@
 	<title>WebMarket</title>
 	</head>
 	<body>
-	<%@ include file="menu.jsp" %>
+	<jsp:include page="menu.jsp"/>
 	
 	<%! String wc = "웹 쇼핑몰에 오신 것을 환영합니다.";
 		String tag = "Welcome to Web Market!";%>
@@ -20,10 +20,10 @@
 	
 	<div class="container">
 		<div class="text-center">
-			<h3><%= tag %></h3>
+			<h3><a href="product.jsp"><%= tag %></a></h3>
 		</div>
 	</div>
 	<hr>
-	<%@ include file="footer.jsp" %>
+	<jsp:include page="footer.jsp"/>
 	</body>
 </html>
